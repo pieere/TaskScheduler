@@ -36,8 +36,7 @@ func main() {
 	var s Scheduler
 	task1 := Task{ID:1, Name: "a",Time: time.Now(), Function: Print}
 	task2 := Task{ID:2, Name: "b",Time: time.Now().Add(5 * time.Second), Function: Print}
-	task3 := Task{ID:3, Name: "c",Time: time.Now().Add(10 * time.Second), Function: Print}
-	s.tasks = append(s.tasks, task1, task2, task3)
+	s.tasks = append(s.tasks, task1, task2)
 	s.Run()
 	time.Sleep(15 * time.Second)
 }
