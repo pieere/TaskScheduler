@@ -34,7 +34,7 @@ func (s *Scheduler) Run(){
 }
 func main() {
 	var s Scheduler
-	task1 := Task{ID:1, Name: "a",Time: time.Now(), Function: Print}
+	task1 := Task{ID:100000000, Name: "a",Time: time.Now(), Function: Print}
 	task2 := Task{ID:2, Name: "b",Time: time.Now().Add(5 * time.Second), Function: Print}
 	s.tasks = append(s.tasks, task1, task2)
 	s.Run()
